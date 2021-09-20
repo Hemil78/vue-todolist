@@ -18,7 +18,8 @@ const app = new Vue({
                 "condition" : false
             }
         ],
-        newElement: ""
+        newElement: "",
+        
     },
     methods: {
         addElement: function() {
@@ -32,7 +33,11 @@ const app = new Vue({
         },
         removeElement: function(indexElm) {
             this.elements.splice(indexElm, 1);
+        },
+        taskTrue: function(indexElm) {
+            
         }
     }
 });
+            
             
