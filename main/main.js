@@ -7,15 +7,15 @@ const app = new Vue({
         elements: [
             {
                 "task" : "Portare i figli a scuola",
-                "condition" : "Non Fatto"
+                "condition" : false
             },
             { 
                 "task" : "Appuntamento dal medico",
-                "condition" : "Non Fatto"
+                "condition" : false
             },
             { 
                 "task" : "Fare la spesa",
-                "condition" : "Non Fatto"
+                "condition" : false
             }
         ],
         newElement: ""
@@ -23,7 +23,8 @@ const app = new Vue({
     methods: {
         addElement: function() {
             if(this.newElement != ""){
-                this.elements(task, condition).push(this.newElement);
+                let newObject = {"task" : this.newElement, "condition" : false}
+                this.elements.push(newObject);
                 this.newElement = "";
             }else{
                 alert("Inserisci un elemento");

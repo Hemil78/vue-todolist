@@ -33,7 +33,7 @@
             <main>
                 <div class="box-list">
                     <ul v-if="elements.length > 0" class="list">
-                        <li v-for="(element, index) in elements" :key="index">{{element}} <span><i class="far fa-thumbs-up"></i> <i class="fas fa-times" @click="removeElement(index)"></i></span></li>
+                        <li v-for="(element, index) in elements" :key="index">{{element.task}} <span><i class="far fa-thumbs-up"></i> <i class="fas fa-times" @click="removeElement(index)"></i></span></li>
                     </ul>
                     <h2 v-else>Non ci sono elementi</h2>
                 </div>
