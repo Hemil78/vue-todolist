@@ -10,11 +10,11 @@ const app = new Vue({
                 "condition" : false
             },
             { 
-                "task" : "Appuntamento dal medico",
+                "task" : "Fare la spesa",
                 "condition" : false
             },
             { 
-                "task" : "Fare la spesa",
+                "task" : "Aperitivo",
                 "condition" : false
             }
         ],

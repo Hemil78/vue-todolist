@@ -6,11 +6,17 @@
 
 body{
     font-family: 'Lato', sans-serif;
+    background-color: rgba(0, 21, 52, .9);
 }
 
 .container{
     max-width: 1100px;
     margin: auto;
+    margin-top: 80px;
+    background-color: rgb(221, 220, 220);
+    padding: 30px;
+    border: 3px solid rgb(0, 225, 100);
+    border-radius: 10px;
 }
 
 /* Header */
@@ -28,8 +34,10 @@ header{
     padding: 10px;
     border-radius: 10px;
     font-size: 16px;
-    box-shadow: 1px 1px 1px 1px;
+    border: 1px solid rgb(0, 225, 100);
     margin: 0 10px;
+    background-color: #fff;
+    color: rgb(0, 21, 52);
 }
 
 /* Main */
@@ -40,6 +48,7 @@ main{
 .box-list{
     background-color: #ddd;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .list{
@@ -59,4 +68,11 @@ main{
     cursor: pointer;
     font-size: 20px;
     margin-left: 5px;
+}
+
+.list li .fa-thumbs-up:hover{
+    color: rgb(0, 192, 86);
+}
+.list li .fa-times:hover{
+    color: red;
 }
